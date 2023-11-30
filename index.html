@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Excel Clone</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title-bar">Book-1 Excel</div>
+    <div class="menu-bar">
+      <div class="menu-file menu-item">File</div>
+      <div class="menu-home menu-item selected">Home</div>
+      <div class="menu-layout menu-item">Layout</div>
+      <div class="menu-help menu-item">Help</div>
+    </div>
+    <div class="menu-bar-icon">
+      <div class="material-icons menu-icon icon-cut">content_cut</div>
+      <div class="material-icons menu-icon icon-copy">content_copy</div>
+      <div class="material-icons menu-icon icon-paste">content_paste</div>
+      <select class="selector font-family-selector">
+        <option style="font-family: Noto Sans;" value="Noto Sans">Noto Sans</option>
+        <option style="font-family: Arial;" value="Arial">Arial</option>
+        <option style="font-family: Calibri;" value="Calibri">Calibri</option>
+        <option style="font-family: Comic Sans MS;" value="Comic Sans Ms">Comic Sans Ms</option>
+        <option style="font-family: Courier New;" value="Courier New">Courier New</option>
+        <option style="font-family: Impact;" value="Impact">Impact</option>
+        <option style="font-family: Open Sans;" value="Open Sans">Open Sans</option>
+        <option style="font-family: Georgia;" value="Georgia">Georgia</option>
+        <option style="font-family: Garamond;" value="Garamond">Garamond</option>
+        <option style="font-family: Lato;" value="Lato">Lato</option>
+        <option style="font-family: Palatino;" value="Palatino">Palinto</option>
+        <option style="font-family: Verdana;" value="Verdana">Verdana</option>
+      </select>
+      <select class="selector font-size-selector">
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="14">14</option>
+        <option value="18">18</option>
+        <option value="24">24</option>
+        <option value="36">36</option>
+      </select>
+      <div class="material-icons menu-icon icon-bold style-icon">format_bold</div>
+      <div class="material-icons menu-icon icon-italic style-icon">format_italic</div>
+      <div class="material-icons menu-icon icon-underline style-icon">format_underline</div>
+      <div class="material-icons menu-icon icon-align-left selected align-icon">format_align_left</div>
+      <div class="material-icons menu-icon icon-align-center align-icon">format_align_center</div>
+      <div class="material-icons menu-icon icon-align-right align-icon">format_align_right</div>
+      <div class="material-icons menu-icon icon-color-fill">format_color_fill</div>
+      <div class="material-icons menu-icon icon-color-text">format_color_text</div>
+    </div>
+    <div class="formula-bar">
+      <div class="formula-editor selected-cell"></div>
+      <div class="function-sign"></div>
+      <div class="formula-editor formula-input-cell" contenteditable="true"></div>
+    </div>
+    <div class="data-container">
+      <div class="select-all"></div>
+      <div class="column-name-container">
+        <!-- <div class="column-name" class="colCode-A colId-1">A</div>
+        <div class="column-name" class="colCode-B colId-2">B</div> -->
+      </div>
+      <div class="row-name-container">
+        <!-- <div class="row-name" class="rowId-1">1</div>
+         <div class="row-name" class="rowId-2">2</div> -->
+      </div>
+      <div class="input-cell-container">
+        <!-- <div class="input-cell-row">
+          <div class="input-cell" contenteditable="true"></div>
+          <div class="input-cell" contenteditable="true"></div>
+        </div>
+        <div class="input-cell-row">
+          <div class="input-cell" contenteditable="true" id="row-1-col-1" data="code-A"> </div>
+          <div class="input-cell" contenteditable="true"></div>
+        </div> -->
+
+      </div>
+    </div>
+    <div class="sheet-bar-container">
+      <div class="scroller">
+        <div class="material-icons icon-left-scroll">arrow_left</div>
+        <div class="material-icons icon-right-scroll">arrow_right</div>
+      </div>
+      <div class="material-icons icon-add">add_circle</div>
+      <div class="sheet-tab-container">
+        <div class="sheet-tab">Sheet-1</div>
+      </div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
+</body>
+
+</html>
